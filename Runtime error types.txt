@@ -1,0 +1,54 @@
+Runtime errors can occur in many ways! Here are the main categories of runtime errors:
+1. Memory-Related Errors
+
+Segmentation Fault / Access Violation: Accessing memory you don't own
+Stack Overflow: Too much recursion or large local variables
+Heap Overflow: Writing beyond allocated memory
+Memory Leaks: Not freeing allocated memory (causes out-of-memory)
+Null/Nullptr Dereference: Accessing null pointers
+Dangling Pointers: Using freed/deleted memory
+
+2. Array/Index Errors
+
+Array Index Out of Bounds: Accessing arr[10] when array has only 5 elements
+Negative Indexing: Using negative indices where not allowed
+Buffer Overflow: Writing beyond array boundaries
+
+3. Arithmetic Errors
+
+Division by Zero: x / 0
+Integer Overflow/Underflow: Result exceeds data type limits
+Floating Point Exceptions: Invalid operations like sqrt(-1)
+Modulo by Zero: x % 0
+
+4. Type Errors
+
+Type Mismatch: Wrong data type for operation
+Invalid Type Conversion/Casting: Failed conversions
+Uninitialized Variables: Using variables before assignment
+
+5. Logic Errors
+
+Infinite Loops: Loop never terminates
+Wrong Conditions: Incorrect if/while conditions
+Off-by-One Errors: Loop runs one time too many/few
+
+6. Input/Output Errors
+
+File Not Found: Opening non-existent files
+Permission Denied: Insufficient access rights
+End of File (EOF): Reading beyond file end
+Invalid Input Format: Wrong data type from user
+
+7. Resource Errors
+
+Out of Memory: System runs out of RAM
+Too Many Open Files: File descriptor limit exceeded
+Network Timeout: Connection issues
+Deadlock: Circular resource waiting
+
+8. Exception/Error Handling
+
+Uncaught Exceptions: No try-catch handling
+Assertion Failures: assert() conditions fail
+Runtime Library Errors: Standard library function failures
